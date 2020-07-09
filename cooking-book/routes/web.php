@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'CookingController@foods');
+
+Route::post('ingridients', 'CookingController@ingridients')->name('ingridients');
