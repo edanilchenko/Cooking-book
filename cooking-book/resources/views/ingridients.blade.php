@@ -7,7 +7,7 @@
 </head>
 <body>
     @foreach ($ingridients as $ingridient)
-        <div>{{ $ingridient->name }}</div>
+        <div>{{ $ingridient->title }}</div>
     @endforeach
 </body>
 </html>

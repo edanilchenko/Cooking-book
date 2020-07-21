@@ -10,7 +10,7 @@
     <form action="{{ route('ingridients') }}" method="post">
         @csrf
         @foreach ($foods as $food)
-            <div><input type="checkbox" name="foods[{{ $food->id }}]">{{ $food->name }}</div>
+            <div><input type="checkbox" name="foods[{{ $food->id }}]">{{ $food->title }}</div>
         @endforeach
         <input type="submit" value="Get ingridients list">
     </form>
